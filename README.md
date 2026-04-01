@@ -310,3 +310,53 @@ It is an attempt to create a clearer language for origin-aware thinking in the a
 
 This repository is intended as an open conceptual and architectural framework.  
 If connected to Kazene Royalty OS or related compatibility-sensitive frameworks, see the relevant repository-level compatibility notices and core-preservation terms where applicable.
+
+## Connection to Kazene Royalty OS
+
+`kazene-lineage-intelligence` is not a replacement for Kazene Royalty OS.  
+It is better understood as an **upper-layer intelligence** that reads origin, derivation, trace, and inheritance behind the operational cycle of Royalty OS.
+
+A simple distinction is:
+
+- **Kazene Royalty OS** moves the cycle of **permission → trace → allocation**
+- **kazene-lineage-intelligence** reads the **bloodline of structure** behind that cycle
+
+This matters because an operational royalty system can record access and allocate value, while a lineage-reading layer can help interpret:
+
+- what actually originated where
+- what was directly referenced
+- what was deeply inherited
+- how strong the trace remains
+- where attribution or recirculation should attach more meaningfully
+
+In short:
+
+> **Royalty OS moves the cycle.  
+> Lineage Intelligence reads the bloodline.**
+
+### Graphviz diagram
+
+```dot
+digraph KazeneRecirculationStack {
+  rankdir=LR;
+  graph [label="Kazene Royalty OS × Structural Lineage Intelligence", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#444444", fontname="Helvetica"];
+  edge [color="#555555", arrowsize=0.8];
+
+  Works [label="Works / Structures / Questions"];
+  Access [label="Royalty OS\nAccess Layer\n\n- permission definition\n- usage scope\n- AI agency rules"];
+  Trace [label="Royalty OS\nTrace Layer\n\n- access logs\n- agent attribution\n- permission snapshot\n- trace records"];
+  Royalty [label="Royalty OS\nRoyalty Layer\n\n- Q-Coin accounting\n- allocation logic\n- monthly recirculation\n- reporting"];
+  Lineage [label="Structural Lineage Intelligence\n\n- origin analysis\n- derivation mapping\n- trace intensity reading\n- inheritance analysis"];
+  Recirculation [label="Recirculation / Attribution Support\n\n- lineage-aware interpretation\n- origin validation\n- recirculation refinement"];
+  Stakeholders [label="Authors / Publishers /\nPlatforms / Users"];
+
+  Works -> Access;
+  Access -> Trace;
+  Trace -> Royalty;
+  Trace -> Lineage;
+  Lineage -> Recirculation;
+  Royalty -> Stakeholders;
+  Recirculation -> Stakeholders;
+  Recirculation -> Royalty [style=dashed, label="optional refinement"];
+}
