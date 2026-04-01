@@ -1,0 +1,23 @@
+digraph KazeneRecirculationStack {
+  rankdir=LR;
+  graph [label="Kazene Royalty OS × Structural Lineage Intelligence", labelloc=t, fontsize=20];
+  node [shape=box, style="rounded,filled", fillcolor="#F8F8F8", color="#444444", fontname="Helvetica"];
+  edge [color="#555555", arrowsize=0.8];
+
+  Works [label="Works / Structures / Questions"];
+  Access [label="Royalty OS\nAccess Layer\n\n- permission definition\n- usage scope\n- AI agency rules"];
+  Trace [label="Royalty OS\nTrace Layer\n\n- access logs\n- agent attribution\n- permission snapshot\n- trace records"];
+  Royalty [label="Royalty OS\nRoyalty Layer\n\n- Q-Coin accounting\n- allocation logic\n- monthly recirculation\n- reporting"];
+  Lineage [label="Structural Lineage Intelligence\n\n- origin analysis\n- derivation mapping\n- trace intensity reading\n- inheritance analysis"];
+  Recirculation [label="Recirculation / Attribution Support\n\n- lineage-aware interpretation\n- origin validation\n- recirculation refinement"];
+  Stakeholders [label="Authors / Publishers /\nPlatforms / Users"];
+
+  Works -> Access;
+  Access -> Trace;
+  Trace -> Royalty;
+  Trace -> Lineage;
+  Lineage -> Recirculation;
+  Royalty -> Stakeholders;
+  Recirculation -> Stakeholders;
+  Recirculation -> Royalty [style=dashed, label="optional refinement"];
+}
